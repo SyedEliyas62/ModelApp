@@ -1,0 +1,236 @@
+
+.circle1{
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circleAnimate 5s infinite;
+}
+.circle2{
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #b642f5;
+    background: linear-gradient(-25deg, #7e1db1, #4a15b3);
+    animation: circleAnimate 15s infinite ;
+}
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: pulse 3s infinite;
+}
+
+@keyframes circleAnimate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Card Styles */
+.curd-wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 600px; /* Fixed width */
+    padding: 20px;
+}
+
+
+.curd-wrapper img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.user-name h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.destination h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #777;
+}
+
+/* Button Styles */
+.btn-share {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-share.btn-card {
+    background-color: #007bff;
+}
+
+.btn-share:hover {
+    background-color: #0056b3;
+}
+
+.btn-share i {
+    margin-right: 10px;
+}
+.model {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.model-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.model-header .close {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.icon#facebook {
+    background-color: #3b5998;
+}
+
+.icon#twitter {
+    background-color: #1da1f2;
+}
+
+.icon#instagram {
+    background-color: #e4405f;
+}
+
+.icon#whatapp {
+    background-color: #25d366;
+}
+
+.icon#telegram {
+    background-color: #0088cc;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: moveAndColorChange 15s infinite;
+}
+
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: bounce 3s infinite;
+}
+
+@keyframes circleAnimate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
